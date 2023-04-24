@@ -3,6 +3,8 @@ package org.hmis;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+import java.io.FileNotFoundException;
+
 import org.junit.jupiter.api.Test;
 
 class JsonReaderTest {
@@ -24,5 +26,19 @@ class JsonReaderTest {
 		assertTrue (coches[0].equals(primero));
 	}
 
+	
+	@Test
+	void testObjectNotNull() {
+		JsonReader jsonReader = new JsonReader();
+
+		assertNotEquals(jsonReader, null);
+	}
+	
+	@Test
+	void testNoExcepcionLeerCochesJSON() {
+		String rutaIncorrecta = "data/automoviles.json";
+
+		assertDoesNotThrow(() -> JsonReader.leerCochesJSON(rutaIncorrecta));
+	}
 
 }

@@ -62,5 +62,49 @@ class CocheTest {
 		Coche segundo = new Coche ("Toyota", "Corolla", 2022, 32000);
 		assertEquals(false, primero.equals(segundo));  // Action // Assert
 	}
+	
+	@Test
+	void testSetters() {
+		Coche primero = new Coche();
+		Coche segundo = new Coche("Audi", "A5", 2021, 35000);
+		primero.setMarca("Audi");
+		primero.setModelo("A5");
+		primero.setAño(2021);
+		primero.setPrecio(35000);
+		assertEquals(true, primero.equals(segundo));
+	}
+	
+	@Test
+	void testGetterMarca() {
+		Coche primero = new Coche("Audi", "A5", 2021, 35000);
+		assertEquals("Audi", primero.getMarca());
+	}
+	
+	@Test
+	void testGetterModelo() {
+		Coche primero = new Coche("Audi", "A5", 2021, 35000);
+		assertEquals("A5", primero.getModelo());
+	}
+	
+	@Test
+	void testGetterAño() {
+		Coche primero = new Coche("Audi", "A5", 2021, 35000);
+		assertEquals(2021, primero.getAño());
+	}
+	
+	@Test
+	void testGetterPrecio() {
+		Coche primero = new Coche("Audi", "A5", 2021, 35000);
+		assertEquals(35000, primero.getPrecio());
+	}
+	
+	@Test
+	void testToString() {
+		Coche primero = new Coche("Audi", "A5", 2021, 35000);
+		assertEquals("Coche [marca=Audi, modelo=A5, año=2021, precio=35000]", primero.toString());
+	}
+	
+	
+	
 
 }
