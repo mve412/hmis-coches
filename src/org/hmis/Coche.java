@@ -70,6 +70,11 @@ public class Coche {
 				Objects.equals(modelo, other.modelo) && 
 				precio == other.precio;
 	}
+	
+	@Override
+	public int hashCode() {
+		return super.hashCode();
+	}
 
 
 
@@ -77,6 +82,9 @@ public class Coche {
 	public String toString() {
 		return "Coche [marca=" + marca + ", modelo=" + modelo + ", anio=" + anio + ", precio=" + precio + "]";
 	}
+
+
+
 	
     
 }
