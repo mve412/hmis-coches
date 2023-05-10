@@ -8,7 +8,7 @@ import java.io.FileReader;
 
 public class Main {
     public static void main(String[] args) {
-    	String ruta = "data/coches.json";
+    	String ruta = "data/coches1.json";
     	
     	Coche[] coches = JsonReader.leerCochesJSON(ruta);
     	
