@@ -1,0 +1,8 @@
+"sameObject, true",
+"nullObject, false",
+", false",
+"Toyota, Corolla, 2022, 22000, true",
+"Toyota, Corolla, 2023, 22000, false",
+"Nissan, Corolla, 2022, 22000, false",
+"Toyota, Auris, 2022, 22000, false",
+"Toyota, Corolla, 2022, 32000, false"

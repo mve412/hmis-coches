@@ -39,11 +39,11 @@ public class Coche {
         this.modelo = modelo;
     }
 
-    public int getAño() {
+    public int getAnio() {
         return año;
     }
 
-    public void setAño(int año) {
+    public void setAnio(int año) {
         this.año = año;
     }
 
@@ -75,7 +75,7 @@ public class Coche {
 
 	@Override
 	public String toString() {
-		return "Coche [marca=" + marca + ", modelo=" + modelo + ", año=" + año + ", precio=" + precio + "]";
+		return "Coche [marca=" + marca + ", modelo=" + modelo + ", anio=" + año + ", precio=" + precio + "]";
 	}
 	
     
