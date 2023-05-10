@@ -1,0 +1,16 @@
+{
+  "coches": [
+    {
+      "marca": "Honda",
+      "modelo": "Civic",
+      "anio": 2022,
+      "precio": 25000
+    },
+    {
+      "marca": "Toyota",
+      "modelo": "Corolla",
+      "anio": 2022,
+      "precio": 22000
+    }
+  ]
+}

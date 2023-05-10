@@ -1,0 +1,22 @@
+{
+  "coches": [
+    {
+      "marca": "Chevrolet",
+      "modelo": "Camaro",
+      "anio": 2023,
+      "precio": 52000
+    },
+    {
+      "marca": "Ford",
+      "modelo": "Mustang",
+      "anio": 2021,
+      "precio": 45000
+    },
+    {
+      "marca": "Honda",
+      "modelo": "Civic",
+      "anio": 2022,
+      "precio": 25000
+    }
+  ]
+}

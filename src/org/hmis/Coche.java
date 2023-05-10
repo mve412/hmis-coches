@@ -5,7 +5,7 @@ import java.util.Objects;
 public class Coche {
     private String marca;
     private String modelo;
-    private int año;
+    private int anio;
     private int precio;
 
     // Constructor por defecto
@@ -13,11 +13,11 @@ public class Coche {
 
     
     //Constructor coche
-    public Coche(String marca, String modelo, int año, int precio) {
+    public Coche(String marca, String modelo, int anio, int precio) {
 		super();
 		this.marca = marca;
 		this.modelo = modelo;
-		this.año = año;
+		this.anio = anio;
 		this.precio = precio;
 	}
 
@@ -40,11 +40,11 @@ public class Coche {
     }
 
     public int getAnio() {
-        return año;
+        return anio;
     }
 
-    public void setAnio(int año) {
-        this.año = año;
+    public void setAnio(int anio) {
+        this.anio = anio;
     }
 
     public int getPrecio() {
@@ -65,7 +65,7 @@ public class Coche {
 		if (getClass() != obj.getClass())
 			return false;
 		Coche other = (Coche) obj;
-		return año == other.año && 
+		return anio == other.anio && 
 				Objects.equals(marca, other.marca) && 
 				Objects.equals(modelo, other.modelo) && 
 				precio == other.precio;
@@ -75,7 +75,7 @@ public class Coche {
 
 	@Override
 	public String toString() {
-		return "Coche [marca=" + marca + ", modelo=" + modelo + ", anio=" + año + ", precio=" + precio + "]";
+		return "Coche [marca=" + marca + ", modelo=" + modelo + ", anio=" + anio + ", precio=" + precio + "]";
 	}
 	
     
