@@ -3,6 +3,7 @@
 	<groupId>hmis-coches</groupId>
 	<artifactId>hmis-coches</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+	<name>hmis-coches-mve412</name>
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
