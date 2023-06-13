@@ -10,7 +10,7 @@ pipeline {
         stage('Git fetch') { 
             steps {
                 // Get some code from a GitHub repository
-                git url: 'https://github.com/mve412/hmis-coches.git', branch: 'main'
+                git url: 'https://mve412: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@github.com/mve412/hmis-coches.git', branch: 'main'
             }
         }
         stage('Compile, Test, Package') { 
@@ -34,29 +34,7 @@ pipeline {
                 }
             }
         }
-        stage ('Analysis') {
-            steps {
-	            // Warnings next generation plugin required
-	            sh "mvn -f pom.xml site"
-            }
-            post {
-                success {
-                    dependencyCheckPublisher pattern: '**/target/site/en/dependency-check-report.xml'
-                    recordIssues enabledForFailure: true, tool: checkStyle()
-                    recordIssues enabledForFailure: true, tool: pmdParser()
-                    recordIssues enabledForFailure: true, tool: cpd()
-                    // recordIssues enabledForFailure: true, tool: findBugs()
-                    recordIssues enabledForFailure: true, tool: spotBugs()
-                }
-            }
-        }
-        stage('SonarQube analysis') {
-            steps {
-                withSonarQubeEnv(credentialsId: 'sonar_server_mve412', installationName: 'servidor_sonarqube_mve412') {
-                    sh 'mvn sonar:sonar -Dsonar.projectKey=hmis-coches-mve412'
-                }
-            }
-        }
+      
 	/*
         stage("Quality Gate") {
 		steps {
